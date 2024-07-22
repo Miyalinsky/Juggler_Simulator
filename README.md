@@ -45,7 +45,7 @@
 
 ## ③DEMO
 
-http://www.ochiponchi.sakura.ne.jp/Janken_App/janken_tpl.html
+http://www.ochiponchi.sakura.ne.jp/Juggler_Simulator/
 
 ## ④作ったアプリケーション用のIDまたはPasswordがある場合
 

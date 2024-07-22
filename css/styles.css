@@ -1,0 +1,253 @@
+body {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background-color: #CCCCCC;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+.explain h2 {
+    font-size: 100%;
+    text-align: center;
+    border: 1px solid #666;
+}
+
+.explain h2:hover {
+    background: #0066CC;
+    color: #fff;
+}
+
+.st-table {
+    text-align: center;
+}
+
+.st-table h2 {
+    font-size: 100%;
+    text-align: center;
+    border: 1px solid #666;
+}
+.st-table h2:hover {
+    background: #0066CC;
+    color: #fff;
+}
+
+.st-table img {
+    width: 90%;
+}
+
+.start {
+    text-align: center;
+}
+
+.start h2 {
+    font-size: 100%;
+    text-align: center;
+    border: 1px solid #666;
+}
+
+.start h2:hover {
+    background: #0066CC;
+    color: #fff;
+}
+
+.start p {
+    font-size: 80%;
+    display: inline;
+}
+
+.status {
+    text-align: center;
+}
+
+.status p {
+    font-size: 80%;
+    display: inline;
+    margin-right: 10px;
+}
+
+.slot {
+    width: 90%;
+    height: 450px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 10px;
+    border: solid 1px #333;
+    background-color: black;
+}
+
+#slot-frame {
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    border: solid 1px #333;
+}
+
+ul {
+    list-style: none;
+}
+
+.reels {
+    width: 31%;
+    position: absolute;
+}
+
+.reels:nth-child(1) {
+    left: 0%;
+}
+
+.reels:nth-child(2) {
+    left: 33%;
+}
+
+.reels:nth-child(3) {
+    right: 0%;
+}
+
+.reel {
+    height: 130px;
+}
+
+.reel img {
+    display: block;
+    margin: auto;
+    height: 130px;
+}
+
+.status-container {
+    display: flex;
+    column-gap: 10px;
+    justify-content: flex-start;
+}
+
+.status-container h2{
+    color: yellow;
+}
+
+.status-container p {
+    font-size: 30px;
+    /* margin-top: -20px;
+    margin-bottom: -20px; */
+}
+
+.gogo img {
+    margin: auto;
+    height: 130px;
+}
+
+.disp-status {
+    display: flex;
+    column-gap: 20px;
+    margin: 0 auto;
+}
+
+.disp-status p {
+    margin-top: 10px;
+    margin-bottom: -15px;
+}
+
+.result {
+    margin-top: 20px;
+    margin-right: auto;
+    text-align: left;
+}
+
+.result h3 {
+    display: inline;
+}
+
+.button-container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: flex-start;
+    position: relative;
+    margin-top: -30px;
+}
+
+.ellipse-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    border-radius: 50px;
+    /* 楕円の形を作るためにボーダー半径を設定 */
+    font-size: 16px;
+    text-align: center;
+    background-color: #fff;
+    /* ボタンの背景色 */
+    cursor: pointer;
+    /* マウスポインターを指に変更 */
+    transition: background-color 0.2s, color 0.2s;
+    /* ホバー時の変化にトランジションを追加 */
+    height: 60px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.ellipse-button:hover {
+    background-color: #ff0000;
+    /* ホバー時の背景色 */
+    color: #fff;
+    /* ホバー時の文字色 */
+}
+
+.ellipse-button:focus {
+    outline: none;
+    /* ボタンフォーカス時のアウトラインを削除 */
+}
+
+.lever {
+    width: 60px;
+    height: 60px;
+    background-color: #000;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    transition: transform 0.3s;
+    margin-top: 10px;
+    left: 130px;
+}
+
+.lever.active {
+    transform: translateY(30px);
+}
+
+.stop-btns {
+    margin: 0 auto;
+}
+
+.stop-btn {
+    display: inline-block;
+    padding: 35px 35px;
+    margin-top: 10px;
+    margin: 10px 70px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: solid 4px #627295;
+    border-radius: 60px;
+}
+
+.stop-btn:active {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    border-bottom: none;
+}
+
+#start-btn {
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: rgb(215, 97, 0);
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+#start-btn:active {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    border-bottom: none;
+}

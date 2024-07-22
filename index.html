@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>ジャ◯ラーシミュレーター</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>6号機ジャ◯ラーシミュレーター</h1>
+    </header>
+
+    <div class="explain">
+        <h2>遊び方</h2>
+        <p><a href="https://github.com/Miyalinsky/Juggler_Simulator" target="_blank">こちら</a>を参照してください</p>
+    </div>
+
+    <div class='st-table'>
+        <h2 id="toggleButton">スペック</h2>
+        <div id="imageContainer">
+            <img src="./img/table.png" alt="Sample Image">
+        </div>
+    </div>
+
+    <div class='start'>
+        <h2 id='gs_btn'>ゲームスタート</h2>
+        <p>設定:</p>
+        <p id='setting'></p>
+    </div>
+    
+    <div class='status'>
+        <p>ゲーム数：</p>
+        <p id='game_count'></p>
+        <p>収支:</p>
+        <p id='balance'></p>
+    </div>
+
+    <div class="slot">
+        <div id="slot-frame">
+            <ul class="reels">
+                <li class="reel" data-val="grape"><img src="img/grape.png"></li>
+                <li class="reel" data-val="bell"><img src="img/bell.png"></li> <!-- index 20 currentreelindex 1-->
+                <li class="reel" data-val="seven"><img src="img/seven.png"></li> <!-- index 19 2-->
+                <li class="reel" data-val="replay"><img src="img/replay.png"></li> <!-- index 18 3-->
+                <li class="reel" data-val="grape"><img src="img/grape.png"></li> <!-- index 17 4-->
+                <li class="reel" data-val="replay"><img src="img/replay.png"></li> <!-- index 16 5-->
+                <li class="reel" data-val="grape"><img src="img/grape.png"></li> <!-- index 15 6-->
+                <li class="reel" data-val="bar"><img src="img/bar.png"></li> <!-- index 14 7-->
+                <li class="reel" data-val="cherry"><img src="img/cherry.png"></li> <!-- index 13 8-->
+                <li class="reel" data-val="grape"><img src="img/grape.png"></li> <!-- index 12 9-->
+                <li class="reel" data-val="replay"><img src="img/replay.png"></li> <!-- index 11 10-->
+                <li class="reel" data-val="grape"><img src="img/grape.png"></li> <!-- index 10 11-->
+                <li class="reel" data-val="seven"><img src="img/seven.png"></li> <!-- index 9 12-->
+                <li class="reel" data-val="pierrot"><img src="img/pierrot.png"></li> <!-- index 8 13-->
+                <li class="reel" data-val="grape"><img src="img/grape.png"></li> <!-- index 7 14-->
+                <li class="reel" data-val="replay"><img src="img/replay.png"></li> <!-- index 6 15-->
+                <li class="reel" data-val="grape"><img src="img/grape.png"></li> <!-- index 5 16-->
+                <li class="reel" data-val="cherry"><img src="img/cherry.png"></li> <!-- index 4 17-->
+                <li class="reel" data-val="bar"><img src="img/bar.png"></li> <!-- index 3 18-->
+                <li class="reel" data-val="grape"><img src="img/grape.png"></li> <!-- index 2 19-->
+                <li class="reel" data-val="replay"><img src="img/replay.png"></li> <!-- index 1 20-->
+                <li class="reel" data-val="grape"><img src="img/grape.png"></li> <!-- index 0 初期値 21-->
+                <li class="reel" data-val="bell"><img src="img/bell.png"></li>
+            </ul>
+            <ul class="reels">
+                <li class="reel" data-val="pierrot"><img src="img/pierrot.png"></li>
+                <li class="reel" data-val="replay"><img src="img/replay.png"></li> <!-- index 20 -->
+                <li class="reel" data-val="seven"><img src="img/seven.png"></li> <!-- index 19 -->
+                <li class="reel" data-val="grape"><img src="img/grape.png"></li> <!-- index 18 -->
+                <li class="reel" data-val="cherry"><img src="img/cherry.png"></li> <!-- index 17 -->
+                <li class="reel" data-val="replay"><img src="img/replay.png"></li> <!-- index 16 -->
+                <li class="reel" data-val="bell"><img src="img/bell.png"></li> <!-- index 15 -->
+                <li class="reel" data-val="grape"><img src="img/grape.png"></li> <!-- index 14 -->
+                <li class="reel" data-val="cherry"><img src="img/cherry.png"></li> <!-- index 13 -->
+                <li class="reel" data-val="replay"><img src="img/replay.png"></li> <!-- index 12 -->
+                <li class="reel" data-val="bar"><img src="img/bar.png"></li> <!-- index 11 -->
+                <li class="reel" data-val="grape"><img src="img/grape.png"></li> <!-- index 10 -->
+                <li class="reel" data-val="cherry"><img src="img/cherry.png"></li> <!-- index 9 -->
+                <li class="reel" data-val="replay"><img src="img/replay.png"></li> <!-- index 8 -->
+                <li class="reel" data-val="bell"><img src="img/bell.png"></li> <!-- index 7 -->
+                <li class="reel" data-val="grape"><img src="img/grape.png"></li> <!-- index 6 -->
+                <li class="reel" data-val="cherry"><img src="img/cherry.png"></li> <!-- index 5 -->
+                <li class="reel" data-val="replay"><img src="img/replay.png"></li> <!-- index 4 -->
+                <li class="reel" data-val="bar"><img src="img/bar.png"></li> <!-- index 3 -->
+                <li class="reel" data-val="grape"><img src="img/grape.png"></li> <!-- index 2 -->
+                <li class="reel" data-val="cherry"><img src="img/cherry.png"></li> <!-- index 1 -->
+                <li class="reel" data-val="pierrot"><img src="img/pierrot.png"></li> <!-- index 0 初期値 -->
+                <li class="reel" data-val="replay"><img src="img/replay.png"></li>
+            </ul>
+            <ul class="reels">
+                <li class="reel" data-val="replay"><img src="img/replay.png"></li>
+                <li class="reel" data-val="grape"><img src="img/grape.png"></li> <!-- index 20 -->
+                <li class="reel" data-val="seven"><img src="img/seven.png"></li> <!-- index 19 -->
+                <li class="reel" data-val="bar"><img src="img/bar.png"></li> <!-- index 18 -->
+                <li class="reel" data-val="bell"><img src="img/bell.png"></li> <!-- index 17 -->
+                <li class="reel" data-val="replay"><img src="img/replay.png"></li> <!-- index 16 -->
+                <li class="reel" data-val="grape"><img src="img/grape.png"></li> <!-- index 15 -->
+                <li class="reel" data-val="pierrot"><img src="img/pierrot.png"></li> <!-- index 14 -->
+                <li class="reel" data-val="bell"><img src="img/bell.png"></li> <!-- index 13 -->
+                <li class="reel" data-val="replay"><img src="img/replay.png"></li> <!-- index 12 -->
+                <li class="reel" data-val="grape"><img src="img/grape.png"></li> <!-- index 11 -->
+                <li class="reel" data-val="pierrot"><img src="img/pierrot.png"></li> <!-- index 10 -->
+                <li class="reel" data-val="bell"><img src="img/bell.png"></li> <!-- index 9 -->
+                <li class="reel" data-val="replay"><img src="img/replay.png"></li> <!-- index 8 -->
+                <li class="reel" data-val="grape"><img src="img/grape.png"></li> <!-- index 7 -->
+                <li class="reel" data-val="pierrot"><img src="img/pierrot.png"></li> <!-- index 6 -->
+                <li class="reel" data-val="bell"><img src="img/bell.png"></li> <!-- index 5 -->
+                <li class="reel" data-val="replay"><img src="img/replay.png"></li> <!-- index 4 -->
+                <li class="reel" data-val="grape"><img src="img/grape.png"></li> <!-- index 3 -->
+                <li class="reel" data-val="pierrot"><img src="img/pierrot.png"></li> <!-- index 2 -->
+                <li class="reel" data-val="bell"><img src="img/bell.png"></li> <!-- index 1 -->
+                <li class="reel" data-val="replay"><img src="img/replay.png"></li> <!-- index 0 初期値 -->
+                <li class="reel" data-val="grape"><img src="img/grape.png"></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="status-container">
+        <div class="gogo">
+            <img id="image" src="img/gogo1.png" alt="Image">
+        </div>
+
+        <button id='maxbet' class='ellipse-button'>MAX<br>BET</button>
+
+        <div class="disp-status">
+            <div class="credit">
+                <p id='credit'></p>
+                <h2>CREDIT</h2>
+            </div>
+
+            <div class="count">
+                <p id='count'></p>
+                <h2>COUNT</h2>
+            </div>
+
+            <div class="payout">
+                <p id='payout'></p>
+                <h2>PAYOUT</h2>
+            </div>
+        </div>
+
+        <div class="result">
+            <div>
+                <h3>成立役:</h3>
+                <h3 id='result'></h3>
+            </div>
+            <div>
+                <h3>ボーナスフラグ:</h3>
+                <h3 id='bonus'></h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <!-- <button id='bet_1' class='ellipse-button'>1BET</button> -->
+        
+        <div class="lever" id="start-lever"></div>
+        <div class="stop-btns">
+            <button type="button" class="stop-btn" data-val="0" disabled="true"></button>
+            <button type="button" class="stop-btn" data-val="1" disabled="true"></button>
+            <button type="button" class="stop-btn" data-val="2" disabled="true"></button>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

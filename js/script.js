@@ -2774,6 +2774,7 @@ window.onload = function () {
                 } else {
                     $('#result').html('ハズレ');
                 }
+                $('#bonus').html('None');
             }
             
             else if (big_flag) {
